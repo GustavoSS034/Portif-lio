@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Alterando para Portugues brasileiro-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título na aba do Google-->
+
+    <title>Portifólio</title>
+
+    <!--CSS-->
+
+    <link rel="stylesheet" href="css/extends.css">
+
+    <!--Importei as fontes do Google para realizar esse projeto-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- navbar para realizar a navegação no site-->
+
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="/">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Descrição inicial / id utilizado para a navegação da navbar-->
+
+    <header id="header" class="max-width"> <!-- max-width utilizado para dar o espaço para a seção de baixo-->
+        <div class="header__left">
+            <h1> <!--Título da pagina principal-->
+                Olá sou Gustavo e estou iniciando minha jornada na programação!
+            </h1>
+            <p></p>
+            <p>
+                Atualmente, encontro-me no segundo período do curso de Análise e Desenvolvimento de Sistemas, imerso no
+                universo tecnológico com o intuito de aprimorar minhas competências e explorar novas oportunidades.
+            </p>
+        </div>
+    </header>
+
+    <!--Sobre mim / separando cada parte do projeto em seção-->
+
+    <section id="sobre" class="about max-width">
+        <div class="centro">
+            <h2>Sobre mim</h2>
+        </div>
+        
+        <div>
+            <p></p>
+            <p>
+                Meu nome é Gustavo Souza Santos e minha jornada na tecnologia começou em 2023, quando fui apresentado à
+                programação. Desde então, essa área se tornou minha paixão. Atualmente, exerço a função de
+                analista de suporte técnico em uma empresa de ERP, onde aplico meus conhecimentos e habilidades para
+                garantir o funcionamento eficiente dos sistemas e oferecer suporte aos usuários. Essa trajetória tem
+                sido gratificante, pois me permite explorar meu interesse pela tecnologia enquanto contribuo para o 
+                sucesso operacional da empresa.
+            </p>
+            <p>
+                Nos momentos de folga, valorizo muito a companhia da minha família e amigos, pois são eles que trazem
+                alegria e significado à minha vida. Além disso, sou apaixonado por esportes, tanto praticá-los quanto 
+                acompanhar eventos esportivos. E, é claro, não dispenso uma boa partida de video game, uma forma
+                de relaxar e me entreter. Para mim, equilibrar essas atividades é essencial para uma vida
+                plena e satisfatória.
+            </p>
+        </div>
+    </section>
+
+    <!--Formação / mostrando um pouco sobre minhas formações academicas-->
+
+    <section id="formacao" class="formacao">
+        <h2 class="title-tree">Formação</h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="formacao_content max-width">        
+            <ul>
+                <li class="formacao__item">
+                    <h4>Ensino médio completo</h4>
+                </li>
+                
+                <li class="formacao__item">
+                    <h4>Cursando Análise e desenvolvimento de sistemas (2º périodo)</h4>
+                </li>
+                <li class="formacao__item">
+                    <h4>Conhecimentos básicos em HTML, CSS e JavaScript</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos-->
+
+    <section id="projects" class="projects max-width">
+        <div class="projects__content">
+            <h2 class="secondary-title">Projetos</h2>
+            <p>
+                Embora ainda não tenha aplicado meus conhecimentos em HTML,
+                CSS e JavaScript em projetos práticos, durante meu tempo na
+                faculdade, pude explorar essas habilidades ao criar um protótipo
+                utilizando o Figma.
+            </p>
+        </div>
+        <ul>
+            <li class="">
+                <div class="image">
+                    <img src="css/figma.png" alt="Protótipo Drogasil"> <!--Inserindo imagem do prototipo-->
+                </div>
+
+                <div class="projects__info">
+                    <h3 class="tertiary-title"> Protótipo Drogasil</h3>
+                <p>
+                    O protótipo simula integralmente o processo de compra de
+                     uma mercadoria.
+                </p>
+                <a href="https://www.figma.com/proto/pStQcLTCqTM5kzGyvi9rGO/Untitled?node-id=1-5&starting-point-node-id=1%3A4" class="projects__information">Veja o protótipo &rarr;</a>
+                <!--Link para o projeto-->
+                </div>
+            </li>
+        </ul>
+       
+    </section>
+
+    <!--Contato / formulario de preechimento-->
+
+    <section id="about" class="about" class="about max-width">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#"> <!--tag de formulario-->
+                <div class="form-group">
+                    <label for="nome">Nome:</label> <!--Campo para informar nome-->
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label><!--Campo para informar o email-->
+                    <input type="email" id="email" name="email" required> 
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea> <!--Campo para preechimento de mensagem-->
+                </div>
+                <button type="submit">Enviar Mensagem</button> <!--Botão de enviar-->
+            </form>
+        </div>
+    </section>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

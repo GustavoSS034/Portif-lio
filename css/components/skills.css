@@ -1,0 +1,14 @@
+.title-tree {
+    text-align: center;
+    font-size: 40px;
+}
+
+.formacao .formacao_content {
+    padding: 6rem 4 rem;
+    text-align: center;
+}
+
+.formacao .formacao_content ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
